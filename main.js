@@ -1,5 +1,15 @@
 $(document).ready(function() {
-  $('.portfoliobutton').click(function() {
-    $('#portfolio').show('normal');
+  $('.menubutton').hover(
+    function() {
+      $(this).addClass('menuButtonActive');
+      },
+    function() {
+      $(this).removeClass('menuButtonActive');
+
   });
+
+  $('.portfoliobutton').click(function() {
+    $('.content').load('/portfolio.html', '.content')
+  });
+
 });

@@ -18,8 +18,6 @@ body {
   min-width: 600px;
 }
 
-button { cursor: pointer; }
-
 a { text-decoration: none; }
 
 .toppanel {
@@ -69,7 +67,7 @@ a { text-decoration: none; }
   transition: all .3s;
 }
 
-.menubutton:hover {
+.menuButtonActive {
   background: #e2e2e2;
   color: #303030;
 }

@@ -23,6 +23,10 @@ main {
   color: white;
 }
 
+.card .card-title {
+  font-size: 1.5em;
+}
+
 .profile-img {
   border: .2em solid white;
 }
@@ -36,11 +40,17 @@ nav ul a:hover {
   color: #424242;
 }
 
-.logoimg {
-  height: 64px;
-  border-radius: 50%;
+nav .brand-logo,
+.logo-img {
+  height: 100%;
+  padding: .2em;
+  transition-duration: 0.8s;
+  transition-property: transform;
 }
-
+.logo-img:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
 .link-img {
   width: 3em;
   margin-right: 1em;

@@ -1,180 +1,103 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  font: inherit;
-  color: inherit;
-}
-
-html {
-  font: .75em Tahoma;
-  color: #303030;
-  box-sizing: border-box;
-  background: #e2e2e2;
-}
-
 body {
-  margin: 0;
-  min-width: 600px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-a { text-decoration: none; }
-
-.toppanel {
-  position: fixed;
-  width: 100%;
-  padding: 2em;
-  background: #303030;
-  text-align: right;
-  top: 0;
+main {
+  flex: 1 0 auto;
 }
 
-.toppanelwrapper {
-  position: relative;
-  width: 100%;
+.nav-wrapper,
+.page-footer,
+.card-panel {
+  background-color: #424242;
 }
 
-.menu::before {
-  content: '';
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
+.btn {
+  background-color: #b9b9b9;
+}
+
+.btn:hover {
+  background-color: #424242;
+  color: white;
+}
+
+.profile-img {
+  border: .2em solid white;
+}
+
+.section {
+  border-radius: .5em;
+}
+
+nav ul a:hover {
+  background-color: rgba(255, 255, 255, 0.48);
+  color: #424242;
 }
 
 .logoimg {
-  position: absolute;
-  left: 0;
-  top: 0;
+  height: 64px;
   border-radius: 50%;
-  height: 50px;
+}
+
+.link-img {
+  width: 3em;
+  margin-right: 1em;
   border: 3px solid transparent;
-  transition: .3s;
 }
 
-.logoimg:hover { border: 3px solid #e2e2e2; }
-
-.menu { height: 50px; }
-
-.menubutton {
-  text-transform: uppercase;
-  padding: .5em 1em;
-  font-size: 1.25em;
-  margin-left: 1em;
-  background: none;
-  color: #e2e2e2;
-  border: 0;
-  border-radius: 2px;
-  transition: all .3s;
+.link-img:hover {
+  border: 3px solid #999;
+  animation: pulsate 1s ease-out;
+  -webkit-animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.0
 }
 
-.menuButtonActive {
-  background: #e2e2e2;
-  color: #303030;
+@keyframes pulsate {
+    0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
 }
 
-.content {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 100px;
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
 }
 
-.titlesection {
-  text-align: center;
-  margin: 1em 0;
+/* Form colors */
+
+form {
+  color: white;
 }
 
-.sectiontext {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 3em;
-  text-transform:  capitalize;
-  text-align: center;
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+#textarea1:focus + label {
+  color: white;
 }
 
-.titlesection::before {
-  content:'';
-  display:block;
-  height:100px;
-  margin:-100px 0 0;
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+#textarea1:focus {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
 }
 
-.arrowdown {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateY(5px);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #333333;
-}
-
-.profile,
-.portfolio {
-  background: #333333;
-  border-radius: 6px;
-  color: #e2e2e2;
-  padding: 2em;
-}
-
-.profile {
-  text-align: center;
-  padding: 4em 2em;
-}
-
-.profiletext {
-  width: 60%;
-  text-align: left;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 1.75em;
-}
-
-.imgprofile {
-  vertical-align: middle;
-  width: 20%;
-  border-radius: 50%;
-  margin-left: 6em;
-}
-
-.portfolio {
-  overflow: hidden;
-  text-align: center;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.contact {
-  width: 100%;
-  padding: 2em;
-  background: #303030;
-  text-align: center;
-}
-
-.webs { display: inline-block; }
-
-.webimg { width: 150px; }
-
-.created { color: #333333; }
-
-@media only screen and (max-width: 960px) {
-
-  .profiletext {
-    display: block;
-    width: 100%;
-    margin: auto;
-   }
-
-   .imgprofile {
-    display: block;
-    width: 50%;
-    margin: auto;
-    padding-top: 3em;
-   }
+/* valid color */
+input:not([type]).valid, 
+input:not([type]):focus.valid, 
+input[type=text].valid, 
+input[type=text]:focus.valid, 
+input[type=email].valid, 
+input[type=email]:focus.valid, 
+textarea.materialize-textarea.valid, 
+textarea.materialize-textarea:focus.valid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
 }

@@ -1,38 +1,18 @@
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
-}
+html { min-width: 320px; }
 
 .nav-wrapper,
 .page-footer,
-.card-panel {
-  background-color: #424242;
-}
+.card-panel { background-color: #424242; }
 
-.btn {
-  background-color: #b9b9b9;
-}
+#profile-text { text-align: justify; }
+
+#portfolio-wrapper { margin: 0; }
+
+.btn { background-color: #b9b9b9; }
 
 .btn:hover {
   background-color: #424242;
   color: white;
-}
-
-.card .card-title {
-  font-size: 1.5em;
-}
-
-.profile-img {
-  border: .2em solid white;
-}
-
-.section {
-  border-radius: .5em;
 }
 
 nav ul a:hover {
@@ -40,17 +20,19 @@ nav ul a:hover {
   color: #424242;
 }
 
-nav .brand-logo,
+.brand-logo,
 .logo-img {
   height: 100%;
   padding: .2em;
   transition-duration: 0.8s;
   transition-property: transform;
 }
+
 .logo-img:hover {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
 }
+
 .link-img {
   width: 3em;
   margin-right: 1em;
@@ -67,29 +49,25 @@ nav .brand-logo,
 }
 
 @keyframes pulsate {
-    0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
+  0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
 }
 
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
+  0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
 }
 
 /* Form colors */
 
-form {
-  color: white;
-}
+form { color: white; }
 
 /* label focus color */
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
-#textarea1:focus + label {
-  color: white;
-}
+#textarea1:focus + label { color: white; }
 
 /* label underline focus color */
 .input-field input[type=text]:focus,
@@ -111,3 +89,5 @@ textarea.materialize-textarea:focus.valid {
   border-bottom: 1px solid white;
   box-shadow: 0 1px 0 0 white;
 }
+
+.radius { border-radius: 2px; }

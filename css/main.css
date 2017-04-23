@@ -26,6 +26,8 @@ nav ul a:hover {
 
 #profile-text p:first-child { margin-top: 0; }
 
+#profile-text p:last-child { margin-bottom: 0; }
+
 #portfolio-wrapper { margin: 0; }
 
 .btn { background-color: #b9b9b9; }

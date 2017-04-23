@@ -4,17 +4,6 @@ html { min-width: 320px; }
 .page-footer,
 .card-panel { background-color: #424242; }
 
-#profile-text { text-align: justify; }
-
-#portfolio-wrapper { margin: 0; }
-
-.btn { background-color: #b9b9b9; }
-
-.btn:hover {
-  background-color: #424242;
-  color: white;
-}
-
 nav ul a:hover {
   background-color: rgba(255, 255, 255, 0.48);
   color: #424242;
@@ -32,6 +21,20 @@ nav ul a:hover {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
 }
+
+#profile-text { text-align: justify; }
+
+#profile-text p:first-child { margin-top: 0; }
+
+#portfolio-wrapper { margin: 0; }
+
+.btn { background-color: #b9b9b9; }
+
+.btn:hover {
+  background-color: #424242;
+  color: white;
+}
+
 
 .link-img {
   width: 3em;

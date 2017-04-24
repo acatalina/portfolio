@@ -1,7 +1,7 @@
-# Profile website
+# Portfolio website
 
-This project was first initialized as part of a pre-developer's course exercise. Now it represents 
-my profile/portfolio website.
+This project was first initialized as part of a developer's pre-course exercise. Now it represents 
+my portfolio website.
 
 It has been built using HTML, vanilla CSS, Normalize, Materialize CSS and JQuery.
 

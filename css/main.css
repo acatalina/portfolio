@@ -1,0 +1,98 @@
+html { min-width: 320px; }
+
+.nav-wrapper,
+.page-footer,
+.card-panel { background-color: #424242; }
+
+nav ul a:hover {
+  background-color: rgba(255, 255, 255, 0.48);
+  color: #424242;
+}
+
+.brand-logo,
+.logo-img {
+  height: 100%;
+  padding: .2em;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+
+.logo-img:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+#profile-text { text-align: justify; }
+
+#profile-text p:first-child { margin-top: 0; }
+
+#profile-text p:last-child { margin-bottom: 0; }
+
+#portfolio-wrapper { margin: 0; }
+
+.btn { background-color: #b9b9b9; }
+
+.btn:hover {
+  background-color: #424242;
+  color: white;
+}
+
+
+.link-img {
+  width: 3em;
+  margin-right: 1em;
+  border: 3px solid transparent;
+}
+
+.link-img:hover {
+  border: 3px solid #999;
+  animation: pulsate 1s ease-out;
+  -webkit-animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.0
+}
+
+@keyframes pulsate {
+  0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
+}
+
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(.9, .9); opacity: 0.8;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.8;}
+}
+
+/* Form colors */
+
+form { color: white; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+#textarea1:focus + label { color: white; }
+
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+#textarea1:focus {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+/* valid color */
+input:not([type]).valid, 
+input:not([type]):focus.valid, 
+input[type=text].valid, 
+input[type=text]:focus.valid, 
+input[type=email].valid, 
+input[type=email]:focus.valid, 
+textarea.materialize-textarea.valid, 
+textarea.materialize-textarea:focus.valid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+.radius { border-radius: 2px; }

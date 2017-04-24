@@ -2,47 +2,262 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Dummy Profile Project</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Alvaro Catalina's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="imgs/favicon.png"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-  <div class="toppanel">
-    <div class="toppanelwrapper">
-    <img class="logoimg" src="imgs/profile.jpg" />
-    <nav class="menu">
-      <a class="menubutton profilebutton" href="index.html">profile</a>
-      <a class="menubutton portfoliobutton" href="portfolio.html">portfolio</a>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img class="logo-img" src="imgs/logo.png"/></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a id="profile-btn">Profile</a></li>
+          <li><a id="portfolio-btn">Portfolio</a></li>
+          <li><a id="contact-btn">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    </div>
   </div>
-  <div class="content">
-    <div class="titlesection">
-      <span class="sectiontext">profile</span>
-      <span class="arrowdown"></span>
+  <main id="profile" class="container"> 
+    <section>
+      <h2>Profile</h2>
+      <div class="card-panel z-depth-1">
+        <div class="row">
+          <div class="col s12 m2 l2">
+            <img src="imgs/profile.jpg" alt="profile pic" class="responsive-img radius">
+          </div>
+          <div id="profile-text" class="col s12 m10 l10">
+            <p class="white-text flow-text">
+              Hello there! My name is Alvaro and I am a junior full-stack developer. 
+              I started coding on February 2017 after 10 years of radiography
+              when my world and life changed for good. 
+            </p>
+            <p class="white-text flow-text">
+              I have been working with html, css (vanilla css, scss, 
+              bulma, bootstrap and materialize), javascript (vanilla JS, react, 
+              postgresSQL, mongoose, express, EJS...), SQL, mongoDB and learning 
+              a little bit of java on my free time.
+            </p>
+            <p class="white-text flow-text">
+              You will see in my portfolio some projects done with react, express and
+              mongoose and more to come!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <section>
+      <h2 id="portfolio">Portfolio</h2>
+      <div class="card-panel z-depth-1">
+        <div id="portfolio-wrapper" class="row">
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+              <img class="materialboxed" width="650" src="imgs/speedy.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Speedy Movers
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="http://www.speedy-movers.co.uk" target="blank">
+                    Visit website
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Speedy Movers
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>
+                  Official website built using react, 
+                  react-Addons-CSS-Transition-Group, react-Scrollable-Anchor, 
+                  normalize and fontawesome.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" width="650" src="imgs/ncnews.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Northcoders News
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="https://northcodersnews-drasek.herokuapp.com/" target="blank">
+                    Visit website
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Northcoders News
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Front-end project part of a set of web, API and mongo database. 
+                  Built with react, react-Addons-CSS-Transition-Group, express,
+                  bulmaCSS and fontawesome.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" width="650" src="imgs/ncnewsapi.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Northcoders News API
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="https://northcodersnewsapi.herokuapp.com/" target="blank">
+                    Visit website
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Northcoders News API
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>API part of a set of web, API and mongo database. 
+                  Built with express and mongoose.
+                </p>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div id="portfolio-wrapper" class="row">
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+              <img class="materialboxed" width="650" src="imgs/underscore.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Underscore
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="https://acatalina.github.io/drasek-underscore" target="blank">
+                    Visit website
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Underscore
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Own implementation of various methods of the library underscore. 
+                  The website was developed using markdown and minimalist jekyll theme.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+              <img class="materialboxed" width="650" src="imgs/magic8ball.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Magic 8 Ball
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="https://acatalina.github.io/magic8-ball" target="blank">
+                    Visit website
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Magic 8 Ball
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Little fun project developing a magic 8 ball with react and vanilla CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact</h5>
+          <div class="row">
+            <form class="col s12" action="https://formspree.io/accarrasco@gmail.com" method="POST">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="icon_prefix" type="text" class="validate" name="name">
+                  <label for="icon_prefix">Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate" name="email">
+                  <label for="email" data-error="wrong">Email</label>
+                </div>
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea validate" name="message"></textarea>
+                  <label for="textarea1">Message</label>
+                </div>
+              </div>
+                <button class="btn waves-effect waves-light right" type="submit" value="send" name="action">
+                  Submit
+                  <i class="material-icons right">send</i>
+                </button>
+            </form>
+          </div>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="left" 
+                href="https://github.com/acatalina" target="_blank">
+                <img class="responsive-img circle link-img" src="imgs/githubicon.png"/>
+              </a>
+            </li>
+            <li>
+              <a class="left" 
+                href="https://www.codewars.com/users/acatalina/" target="_blank">
+                <img class="responsive-img circle link-img" src="imgs/codewarsicon.jpg"/>
+              </a>
+            </li>
+            <li>
+              <a class="left" 
+                href="https://uk.linkedin.com/pub/%C3%A1lvaro-catalina/38/766/62" target="_blank">
+                <img class="responsive-img circle link-img" src="imgs/linkedinicon.png" alt="LinkedIn"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="profile">
-    <div class="profiletext">Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Pellentesque a turpis tellus. Proin sed nulla lectus. Suspendisse
-      lobortis interdum vestibulum. Cras ut elementum mi. Sed vel eros a nulla
-      suscipit suscipit. Nam sollicitudin porttitor dui, nec iaculis nulla bibendum
-      vehicula. Maecenas ac erat lorem. Nullam venenatis rhoncus vehicula. Duis
-      fermentum eu quam ac congue. Nullam id condimentum dolor. Phasellus efficitur
-      bibendum magna, id feugiat nisi rhoncus id. Integer elementum finibus semper.
-      Sed vitae sodales nibh, ut eleifend odio. Sed gravida massa vitae augue
-      sagittis vehicula.
+    <div class="footer-copyright">
+      <div class="container center-align">
+        Created and coded by Drasek
+      </div>
     </div>
-    <img class="imgprofile" src="imgs/profile.jpg" />
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="contact">
-      <a class="menubutton" href="https://uk.linkedin.com/in/alvarocatalina" target="_blank">linkedin</a>
-      <a class="menubutton" href="https://github.com/acatalina" target="_blank">github</a>
-    </div>
-    <p class="created">Created and Coded by <a href="https://github.com/acatalina">
-      Drasek</a></p>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src='main.js'></script>'
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

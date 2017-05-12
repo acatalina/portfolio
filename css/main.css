@@ -28,7 +28,14 @@ nav ul a:hover {
 
 #profile-text p:last-child { margin-bottom: 0; }
 
-#portfolio-wrapper { margin: 0; }
+.card-panel {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card .card-title {
+  font-size: 1.25em;
+}
 
 .btn { background-color: #b9b9b9; }
 
@@ -36,7 +43,6 @@ nav ul a:hover {
   background-color: #424242;
   color: white;
 }
-
 
 .link-img {
   width: 3em;

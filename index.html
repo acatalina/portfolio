@@ -11,18 +11,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img class="logo-img" src="imgs/logo.png"/></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a id="profile-btn">Profile</a></li>
-          <li><a id="portfolio-btn">Portfolio</a></li>
-          <li><a id="contact-btn">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><img class="logo-img" src="imgs/logo.png"/></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="profile-btn">Profile</a></li>
+            <li><a class="portfolio-btn">Portfolio</a></li>
+            <li><a class="contact-btn">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a class="profile-btn">Profile</a></li>
+      <li><a class="portfolio-btn">Portfolio</a></li>
+      <li><a class="contact-btn">Contact</a></li>
+    </ul>
+  </header>
   <main id="profile" class="container"> 
     <section>
       <h2>Profile</h2>
@@ -44,8 +52,9 @@
               a little bit of java on my free time.
             </p>
             <p class="white-text flow-text">
-              You will see in my portfolio some projects done with react, express and
-              mongoose and more to come!
+              You will see in my portfolio some projects done with react, express,
+              mongoose... Also, I have included in the contact section links to my 
+              github profile and codewars where you can see some of my code.
             </p>
           </div>
         </div>
@@ -54,146 +63,233 @@
     <div class="divider"></div>
     <section>
       <h2 id="portfolio">Portfolio</h2>
-      <div class="card-panel z-depth-1">
-        <div id="portfolio-wrapper" class="row">
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-              <img class="materialboxed" width="650" src="imgs/speedy.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
-                  Speedy Movers
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <p>
-                  <a href="http://www.speedy-movers.co.uk" target="blank">
-                    Visit website
-                  </a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
-                  Speedy Movers
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>
-                  Official website built using react, 
-                  react-Addons-CSS-Transition-Group, react-Scrollable-Anchor, 
-                  normalize and fontawesome.
-                </p>
-              </div>
+      <div class="card-panel z-depth-1 row">
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+            <img class="materialboxed" width="650" src="imgs/chattaranga.jpg">
             </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-                <img class="materialboxed" width="650" src="imgs/ncnews.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
-                  Northcoders News
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <p>
-                  <a href="https://northcodersnews-drasek.herokuapp.com/" target="blank">
-                    Visit website
-                  </a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
-                  Northcoders News
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>Front-end project part of a set of web, API and mongo database. 
-                  Built with react, react-Addons-CSS-Transition-Group, express,
-                  bulmaCSS and fontawesome.</p>
-              </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Chattaranga
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="http://chattaranga.herokuapp.com" target="blank">
+                  Visit website
+                </a>
+              </p>
             </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-                <img class="materialboxed" width="650" src="imgs/ncnewsapi.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
-                  Northcoders News API
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <p>
-                  <a href="https://northcodersnewsapi.herokuapp.com/" target="blank">
-                    Visit website
-                  </a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
-                  Northcoders News API
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>API part of a set of web, API and mongo database. 
-                  Built with express and mongoose.
-                </p>
-              </div>
-            </div> 
-          </div>
-        </div>
-        <div id="portfolio-wrapper" class="row">
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-              <img class="materialboxed" width="650" src="imgs/underscore.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
-                  Underscore
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <p>
-                  <a href="https://acatalina.github.io/drasek-underscore" target="blank">
-                    Visit website
-                  </a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
-                  Underscore
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>Own implementation of various methods of the library underscore. 
-                  The website was developed using markdown and minimalist jekyll theme.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-              <img class="materialboxed" width="650" src="imgs/magic8ball.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
-                  Magic 8 Ball
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <p>
-                  <a href="https://acatalina.github.io/magic8-ball" target="blank">
-                    Visit website
-                  </a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
-                  Magic 8 Ball
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>Little fun project developing a magic 8 ball with react and vanilla CSS</p>
-              </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Chattaranga
+                <i class="material-icons right">close</i>
+              </span>
+              <p>
+                Chattaranga consists on an video-chat language learning multi-platform 
+                desktop app developed using electron, react, sass, socket.io, 
+                peerjs, mongoDB, mongoose and express. It was built on a team of four
+                as our 3 week final project.
+              </p>
             </div>
           </div>
         </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+            <img class="materialboxed" width="650" src="imgs/speedy.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Speedy Movers
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="http://www.speedy-movers.co.uk" target="blank">
+                  Visit website
+                </a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Speedy Movers
+                <i class="material-icons right">close</i>
+              </span>
+              <p>
+                Official website built using react, 
+                react-Addons-CSS-Transition-Group, react-Scrollable-Anchor, 
+                normalize and fontawesome.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" width="650" src="imgs/ncnews.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Northcoders News
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="https://northcodersnews-drasek.herokuapp.com/" target="blank">
+                  Visit website
+                </a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Northcoders News
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Front-end project part of a set of web, API and mongo database. 
+                Built with react, react-Addons-CSS-Transition-Group, express,
+                bulmaCSS and fontawesome.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" width="650" src="imgs/ncnewsapi.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                NC News API
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="https://northcodersnewsapi.herokuapp.com/" target="blank">
+                  Visit website
+                </a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                NC News API
+                <i class="material-icons right">close</i>
+              </span>
+              <p>API part of a set of web, API and mongo database. 
+                Built with express and mongoose.
+              </p>
+            </div>
+          </div> 
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+            <img class="materialboxed" width="650" src="imgs/underscore.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Underscore
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="https://acatalina.github.io/drasek-underscore" target="blank">
+                  Visit website
+                </a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Underscore
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Own implementation of various methods of the library underscore. 
+                The website was developed using markdown and minimalist jekyll theme.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+            <img class="materialboxed" width="650" src="imgs/magic8ball.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Magic 8 Ball
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="https://acatalina.github.io/magic8-ball" target="blank">
+                  Visit website
+                </a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Magic 8 Ball
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Little fun project developing a magic 8 ball with react and vanilla CSS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+            <img class="materialboxed" width="650" src="imgs/northwitter.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Northwitter
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="https://acatalina.github.io/northwitter" target="blank">
+                  Visit website
+                </a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Northwitter
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Basic clone of Twitter developed with react, vanilla CSS, 
+                react-string-replace and superagent</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+            <img class="materialboxed" width="650" src="imgs/wigancomputers.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Wigan Computers
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="https://acatalina.github.io/wigancomputers" target="blank">
+                  Visit website
+                </a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Wigan Computers
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Design and create of a single page website for local business 
+                built on html, vanilla CSS and vanilla JS</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>

@@ -2,21 +2,23 @@ $(document).ready(function () {
   const speed = 300;
   const offset = 80;
 
-  $('#profile-btn').click(() => {
+  $('.profile-btn').click(() => {
     $('html, body').animate({
       scrollTop: $('#profile').offset().top - offset
     }, speed);
   });
   
-  $('#portfolio-btn').click(() => {
+  $('.portfolio-btn').click(() => {
     $('html, body').animate({
       scrollTop: $('#portfolio').offset().top - offset
     }, speed);
   });
 
-  $('#contact-btn').click(() => {
+  $('.contact-btn').click(() => {
     $('html, body').animate({
       scrollTop: $('#contact').offset().top - offset
     }, speed);
   });
+
+  $(".button-collapse").sideNav();
 });
